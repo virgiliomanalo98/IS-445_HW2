@@ -1,4 +1,4 @@
-var imageSF = document.querySelector('.trip-images');
+var imageSF = document.querySelectorAll('.trip-image');
 var backdrop = document.querySelector('.backdrop');
 var modal = document.querySelector('.modal');
 
@@ -12,5 +12,8 @@ function closeModal () {
     modal.style.display = 'none';
 }
 
-imageSF.onclick = openModal;
-backdrop.onclick = closeModal;
+for (i = 0; i < imageSF.length; i++) {
+    imageSF[i].addEventListener('click', openModal);
+}
+
+backdrop.addEventListener('click', closeModal);
