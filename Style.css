@@ -25,32 +25,57 @@ a {
     height: 40px;
     background-color: #521751;
     color: white;
-    padding: 10px;
+    padding: 0;
     margin: 0;
     text-align: center;
 }
 
 /*nav*/
+.navigation {
+    text-align: center;
+    padding: 0;
+}
+
+
 .navigation li, .navigation a {
     display: inline-block;
     width: 70px;
-    background-color: yellow;
+    background-color: rgb(177,177,174);
 }
+
 
 /*main*/
 .trip-text {
     background-color: #fa923f;
-    padding: 10px;
+    padding: 0;
+    display: flex;
 }
 
 .trip-text p{
-    background-color: white;
+    background-color: #521751;
+    color: white;
+    text-align: center;
     margin: 0;
+    width: 50%;
 }
 
-/*footer*/
+.trip-images {
+    display: flex;
+}
+
+.trip-images img {
+    width: 50%;
+    height: 100%;
+}
+
 .feedback {
     background-color: #521751;
     color: white;
     text-align: center;
 }
+
+/*footer*/
+.review-clients p, .review-clients img {
+    display: inline;
+    vertical-align: middle;
+} 
